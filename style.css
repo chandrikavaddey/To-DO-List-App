@@ -1,0 +1,187 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 768px;
+      margin: 2rem;
+      position: relative;
+      border: 2px solid #3498db; /* Add a border to the container */
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .input-section,
+    .filter-section {
+      display: flex;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+    }
+
+    input[type="text"],
+    select,
+    input[type="date"] {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      flex: 1;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+      color: #333;
+    }
+
+    input[type="text"]:focus,
+    select:focus,
+    input[type="date"]:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      color: #333;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    li:hover {
+      background-color: #e0e0e0;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: #777;
+    }
+
+    .complete-button,
+    .edit-button,
+    .delete-button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .complete-button:hover {
+      background-color: #219653;
+    }
+
+    .edit-button {
+      background-color: #f39c12;
+    }
+
+    .edit-button:hover {
+      background-color: #e67e22;
+    }
+
+    .delete-button {
+      background-color: #e74c3c;
+    }
+
+    .delete-button:hover {
+      background-color: #c0392b;
+    }
+
+    .complete-button::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f00c";
+      margin-right: 5px;
+    }
+
+    .edit-button::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f044";
+      margin-right: 5px;
+    }
+
+    .delete-button::before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f2ed";
+      margin-right: 5px;
+    }
+
+    /* Add tag styles */
+    .tag {
+      display: inline-block;
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      color: white;
+    }
+
+    .work {
+      background-color: #3498db;
+    }
+
+    .personal {
+      background-color: #27ae60;
+    }
+
+    .urgent {
+      background-color: #e74c3c;
+    }
+
+    .shopping {
+      background-color: #f39c12;
+    }
+
+    .health {
+      background-color: #9b59b6;
+    }

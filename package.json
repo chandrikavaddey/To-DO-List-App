@@ -1,0 +1,15 @@
+{
+      "name": "todo-app",
+      "version": "1.0.0",
+      "description": "A simple to-do list application",
+      "main": "app.js",
+      "scripts": {
+        "start": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+      },
+      "dependencies": {
+        "vite": "^4.0.0"
+      },
+      "devDependencies": {}
+    }
